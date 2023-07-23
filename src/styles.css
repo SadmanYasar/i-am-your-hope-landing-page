@@ -1,0 +1,57 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffd863;
+  font-family: 'Chewy', cursive;
+
+}
+
+a {
+  color: black;
+}
+
+input[type='range'] {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: black;
+  border-radius: 5px;
+  width: 100%;
+  height: 2px;
+  outline: 0;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #000;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+input[type='range']::-webkit-slider-thumb:active {
+  transform: scale(1);
+}
+
+/* Additional styles for the image */
+.piko {
+  max-width: 100%;
+  height: auto;
+  align-self: flex-end;
+}
