@@ -15,6 +15,7 @@ import Overlay from './layout/Overlay'
 import { FadeIn, LeftMiddle } from './layout/styles'
 
 import Bananas from './Bananas'
+import { Helmet } from 'react-helmet'
 // Comment the above and uncomment the following to import the WebGL BG lazily for faster loading times
 // const Bananas = lazy(() => import('./Bananas'))
 
@@ -22,6 +23,22 @@ function App() {
   const [speed, set] = useState(2)
   return (
     <>
+      <Helmet>
+        <title>I Am Your Hope</title>
+        <meta name="description" content="I Am Your Hope. Join our group and get your desired kpop photocards and many more." />
+        <meta itemprop="name" content="I Am Your Hope" />
+        <meta itemprop="description" content="I Am Your Hope. Join our group and get your desired kpop photocards and many more." />
+        <meta itemprop="image" content="https://seeklogo.com/images/T/takashi-murakami-logo-A3E27DC9E7-seeklogo.com.png" />
+        <meta property="og:url" content="https://i-am-your-hope.vercel.app" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="I Am Your Hope" />
+        <meta property="og:description" content="I Am Your Hope. Join our group and get your desired kpop photocards and many more." />
+        <meta property="og:image" content="https://seeklogo.com/images/T/takashi-murakami-logo-A3E27DC9E7-seeklogo.com.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="I Am Your Hope" />
+        <meta name="twitter:description" content="I Am Your Hope. Join our group and get your desired kpop photocards and many more." />
+        <meta name="twitter:image" content="https://seeklogo.com/images/T/takashi-murakami-logo-A3E27DC9E7-seeklogo.com.png" />
+      </Helmet>
       <Suspense fallback={null}>
         <Bananas speed={speed} />
         <FadeIn />
